@@ -44,26 +44,29 @@
 <header class="container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-xs-11">
+            <div class="col-xs-6 ">
+                <ul class="shop_menu">
+                    <li>
+                        <a href="https://vk.com/kubakby" target="_blank">
+                            <i class="fa fa-vk fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/kubakby/" target="_blank">
+                            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ok.ru/kubak.by" target="_blank">
+                            <i class="fa fa-odnoklassniki fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
                 <div id="top-links" class="nav">
                     <ul class="shop_menu pull-right">
-                        <li>
-                            <a href="https://vk.com/kubakby" target="_blank">
-                                <i class="fa fa-vk fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.instagram.com/kubakby/" target="_blank">
-                                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://ok.ru/kubak.by" target="_blank">
-                                <i class="fa fa-odnoklassniki fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </li>
-
                         <li class="dropdown">
                             <a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle"
                                data-toggle="dropdown">
@@ -95,7 +98,7 @@
         <div class="row">
             <ul class="mainmenu">
                 <li><a href="#">Главная</a></li>
-                <li><a href="common/home">Магазин</a></li>
+                <li><a href="index.php?route=product/category&path=59_62">Магазин</a></li>
                 <li><a href="/about">О нас</a></li>
                 <li id="logo">{% if logo %}
                         <a href="{{ home }}">
@@ -104,7 +107,7 @@
                     {% else %}
                         <h1><a href="{{ home }}">{{ name }}</a></h1>
                     {% endif %}</li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="index.php?route=information/contact">Контакты</a></li>
                 <li><a href="#">Отзывы</a></li>
                 {#<li>{{ search }}</li>#}
                 <li>{{ cart }}</li>

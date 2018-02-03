@@ -1,0 +1,52 @@
+#cart
+  display: block
+  button
+    background: none
+    border: 1px solid $w
+      radius: 15px
+    &:hover
+      background: $w
+      .fa-times
+        color: white
+
+  button.shopping-cart
+    position: relative
+    display: flex
+    flex-direction: row
+    font-size: 1rem
+    width: 55px
+    height: 55px
+    border: none
+      radius: 35px
+    padding: 15px
+    margin: 0 auto
+    background-color: $hover
+    &:hover
+      background-color: rgba(0, 182, 227,.2)
+    span
+      font-size: 0rem
+    i.fa-shopping-cart
+      display: block
+      position: absolute
+      top: 30%
+      left: 25%
+      color: $t
+      margin: 0 0
+      padding: 0
+      font-size: 1.6rem
+  ul.shoping_cart
+    background-color: $hover
+    padding: 10px
+    font-size: 0.9rem
+    a
+      font-size: 1rem
+      font-weight: 400
+      img
+        border: solid 1px $y
+    td
+      font-size: 1rem
+      font-weight: 400
+    button
+      i
+        color: $w
+

@@ -1,51 +1,97 @@
+<section class="container-fluid bg_prefooter">
+    <div class="container prefooter">
+        <div class="row">
+            <div class="col-xs-4 unp">
+                <h5>ИП Слижов А.А. УНП 391726919</h5>
+                <br>
+                <h5>Регистрация в Торговом Реестре РБ от</h5>
+            </div>
+        </div>
+    </div>
+</section>
 <footer>
     <div class="container">
         <div class="row">
             {% if informations %}
-                <div class="col-sm-3">
-                    <h5>{{ text_information }}</h5>
-                    <ul class="list-unstyled">
-                        {% for information in informations %}
-                            <li><a href="{{ information.href }}">{{ information.title }}</a></li>
-                        {% endfor %}
-                    </ul>
+                <div class="col-sm-4 center-block">
+
+                        <h5>{{ text_information }}</h5>
+                        <ul class="list-unstyled footer_menu">
+                            {% for information in informations %}
+                                <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+
                 </div>
             {% endif %}
-            <div class="col-sm-3">
-                <h5>{{ text_service }}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-                    <li><a href="{{ return }}">{{ text_return }}</a></li>
-                    <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
-                </ul>
+            <div class="col-sm-4">
+                <div class="center-block">
+                    <h5>{{ text_service }}</h5>
+                    <ul class="list-unstyled footer_menu">
+                        <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+                        <li><a href="{{ return }}">{{ text_return }}</a></li>
+                        <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <h5>{{ text_extra }}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
-                    <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
-                    <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
-                    <li><a href="{{ special }}">{{ text_special }}</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5>{{ text_account }}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="{{ account }}">{{ text_account }}</a></li>
-                    <li><a href="{{ order }}">{{ text_order }}</a></li>
-                    <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-                    <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-                </ul>
+            {#<div class="col-sm-4">#}
+            {#<h5>{{ text_extra }}</h5>#}
+            {#<ul class="list-unstyled footer_menu">#}
+            {#<li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>#}
+            {#<li><a href="{{ voucher }}">{{ text_voucher }}</a></li>#}
+            {#<li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>#}
+            {#<li><a href="{{ special }}">{{ text_special }}</a></li>#}
+            {#</ul>#}
+            {#</div>#}
+            <div class="col-sm-4">
+                <div class="center-block">
+                    <h5>{{ text_account }}</h5>
+                    <ul class="list-unstyled footer_menu">
+                        <li><a href="{{ account }}">{{ text_account }}</a></li>
+                        <li><a href="{{ order }}">{{ text_order }}</a></li>
+                        <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+                        <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-        <hr>
-        <p>
-            Designed by <a href="https://dds.by">DDS</a>
-        </p>
+        {#<hr noshade>#}
+        <div class="row">
+            <ul class="idontunderstandthisbug">
+                <li>
+                    <a href="https://vk.com/kubakby" target="_blank">
+                        <i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/kubakby/" target="_blank">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ok.ru/kubak.by" target="_blank">
+                        <i class="fa fa-odnoklassniki fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 Copyright">
+                <p>Copyright <a href="https://kubak.by">Kubak.by</a> 2017г.</p>
+            </div>
+            {#<div class="col-xs-6 Copyright pull-right">#}
+            {#<p> Designed by <a href="https://dds.by">DDS</a></p>#}
+            {#Разработано в dds.by Dinnersaur Design Studio#}
+            {#</div>#}
+        </div>
+
     </div>
 </footer>
 {% for script in scripts %}
     <script src="{{ script }}" type="text/javascript"></script>
 {% endfor %}
-
-</body></html>
+</body>
+</html>
